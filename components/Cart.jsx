@@ -7,7 +7,7 @@ import {
   AiOutlineShopping,
 } from "react-icons/ai";
 import { TiDeleteOutline } from "react-icons/ti";
-import toast from "react-hot-toast";
+//import toast from "react-hot-toast";
 import { useStateContext } from "../context/StateContext";
 import { urlFor } from "@/lib/client";
 import getStripe from "../lib/getStripe";
@@ -38,7 +38,7 @@ const Cart = () => {
 
     const data = await response.json();
 
-    toast.loading("Redirecting...");
+    //toast.loading("Redirecting...");
 
     stripe.redirectToCheckout({ sessionId: data.id });
 

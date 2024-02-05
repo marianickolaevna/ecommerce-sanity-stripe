@@ -1,6 +1,6 @@
 //import product from "@/sanity/schemas.ts/product";
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { toast } from "react-hot-toast";
+//import { toast } from "react-hot-toast";
 
 const Context = createContext();
 
@@ -46,7 +46,7 @@ export const StateContext = ({ children }) => {
       product.quantity = quantity;
       setCartItems([...cartItems, { ...product }]);
     }
-    toast(`${qty} ${product.name} added to the cart.`);
+    //toast(`${qty} ${product.name} added to the cart.`);
   };
 
   const onRemove = (product) => {
@@ -61,7 +61,7 @@ export const StateContext = ({ children }) => {
       (prevTotalQuantities) => prevTotalQuantities - foundProduct.quantity
     );
     setCartItems(newCartItems);
-    toast(`${product.name} removed from the cart.`);
+    //toast(`${product.name} removed from the cart.`);
   };
 
   const toggleCartItemQuantity = (id, value) => {
