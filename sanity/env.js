@@ -8,7 +8,7 @@ export const projectId =
 
 export const useCdn = false;
 
-function assertValue<T>(v: T | undefined, errorMessage: string): T {
+function assertValue(v, errorMessage) {
   if (v === undefined) {
     throw new Error(errorMessage);
   }
