@@ -17,7 +17,7 @@ const Home = ({ products, bannerData }) => {
         ))}
       </div>
       <FooterBanner
-        product={products && products[0].name}
+        product={products && products[0].slug.current}
         footerBanner={bannerData && bannerData[0]}
       />
     </>
